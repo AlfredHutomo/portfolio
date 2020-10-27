@@ -17,6 +17,9 @@ body {
 		color: whitesmoke;
 		.text span {
 			font-size: 5vw;
+			@media screen and (max-width: 400px) {
+				font-size: 8vw;
+			}
 		}
 	}
 }
@@ -26,9 +29,19 @@ footer {
 	position: absolute;
 	bottom: 0;
 	.content {
+		@media screen and (max-width: 1040px) {
+			display: none;
+		}
 		width: fit-content;
 		margin: auto;
 		padding-bottom: 1rem;
 		color: whitesmoke;
+		a {
+			text-decoration: none;
+			color: whitesmoke;
+			a:hover {
+				color: lightblue;
+			}
+		}
 	}
 }

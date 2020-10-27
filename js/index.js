@@ -1,7 +1,7 @@
 var options = {
-	strings: ["Coding now 💻^1000", "Drinking coffee ☕^1000", "Playing games 🎮^1000"],
-	typeSpeed: 70,
-	backSpeed: 50,
+	strings: ["Coding now 💻^1500", "Drinking coffee ☕^1500", "Playing games 🎮^1500"],
+	typeSpeed: 60,
+	backSpeed: 45,
 	loop: true,
 };
 
