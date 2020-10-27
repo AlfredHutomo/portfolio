@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: roboto mono;
+  font-family: "Fira Code", monospace;
 }
 
 body {
@@ -16,6 +17,25 @@ body .comingsoon {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  color: whitesmoke;
+}
+
+body .comingsoon .text span {
+  font-size: 5vw;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 1rem;
   color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
