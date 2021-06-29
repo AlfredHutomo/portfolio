@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 import {
   CarouselButton,
@@ -10,14 +10,14 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from './TimeLineStyles';
+} from "./TimeLineStyles";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+} from "../../styles/GlobalComponents";
+import { TimeLineData } from "../../constants/constants";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -26,7 +26,7 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
+    return node.scrollTo({ left, behavior: "smooth" });
   };
 
   const handleClick = (e, i) => {
@@ -60,18 +60,14 @@ const Timeline = () => {
       scroll(carouselRef.current, 0);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Section id='about'>
       <SectionDivider colorAlt divider />
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established
-        developers to take their development skills to the next level and build
-        awesome apps.
-      </SectionText>
+      <SectionText>I'm a final year student at RMIT University</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
