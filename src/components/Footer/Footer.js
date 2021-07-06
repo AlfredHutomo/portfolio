@@ -1,5 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { DiReact } from 'react-icons/di';
+import { IoLogoVercel } from 'react-icons/io5';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
@@ -21,13 +23,15 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href='mailto:alfredhutomo@gmail.com'>
-            alfredhutomo@gmail.com
+            alfredhutomo[at]gmail.com
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Made with ♥ by Alfred</Slogan>
+          <Slogan>
+            Made with <DiReact /> & <IoLogoVercel /> by Alfred
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href='https://github.com'>

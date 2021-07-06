@@ -5,23 +5,38 @@ import {
   SectionDivider,
   SectionTitle,
 } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import {
+  Box,
+  Boxes,
+  BoxNum,
+  BoxText,
+  Join,
+  JoinText,
+} from './AcomplishmentsStyles';
 
-const data = [
-  { number: 20, text: 'Open Source Projects' },
-  { number: 1000, text: 'Students' },
-  { number: 1900, text: 'Github Followers' },
-  { number: 5000, text: 'Github Stars' },
+const certificates = [
+  {
+    title: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+    issuer: 'Amazon Web Services (AWS)',
+    link: 'https://www.credly.com/badges/ea79ff2a-87fb-48a5-8eac-c7b0c8fbf138?source=linked_in_profile',
+  },
+  {
+    title: 'Agile Ways of Working',
+    issuer: 'RMIT University',
+    link: 'https://www.youracclaim.com/badges/792bca0f-abb0-43d3-8846-522e6ff00aae?source=linked_in_profile',
+  },
 ];
 
 const Acomplishments = () => (
   <Section>
+    <SectionDivider divider />
     <SectionTitle>Personal Acomplishments</SectionTitle>
+    <JoinText>Certificates</JoinText>
     <Boxes>
-      {data.map((card, index) => (
-        <Box key={index}>
-          <BoxNum>{card.number}</BoxNum>
-          <BoxText>{card.text}</BoxText>
+      {certificates.map((certificate, index) => (
+        <Box key={index} onClick={() => (window.location = certificate.link)}>
+          <JoinText>{certificate.title}</JoinText>
+          <BoxText>{certificate.issuer}</BoxText>
         </Box>
       ))}
     </Boxes>
