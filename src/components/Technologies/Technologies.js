@@ -1,19 +1,19 @@
-import React from 'react';
-import { DiFirebase, DiReact } from 'react-icons/di';
-import { SiRails } from 'react-icons/si';
+import React from "react";
+import { DiFirebase, DiReact } from "react-icons/di";
+import { SiRails } from "react-icons/si";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from "../../styles/GlobalComponents";
 import {
   List,
   ListContainer,
   ListItem,
   ListParagraph,
   ListTitle,
-} from './TechnologiesStyles';
+} from "./TechnologiesStyles";
 
 const Technologies = () => (
   <Section id='tech'>
@@ -21,7 +21,8 @@ const Technologies = () => (
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range of technologies in the web development world from
-      Back-end to Front-end Design.
+      Back-end to Front-end Design. The world is evolving and I'm always
+      learning more every day.
     </SectionText>
     <List>
       <ListItem>

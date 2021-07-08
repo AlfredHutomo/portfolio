@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 import {
   CarouselButton,
@@ -10,14 +10,14 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from './TimeLineStyles';
+} from "./TimeLineStyles";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+} from "../../styles/GlobalComponents";
+import { TimeLineData } from "../../constants/constants";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -26,7 +26,7 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
+    return node.scrollTo({ left, behavior: "smooth" });
   };
 
   const handleClick = (e, i) => {
@@ -60,14 +60,19 @@ const Timeline = () => {
       scroll(carouselRef.current, 0);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Section id='about'>
       <SectionDivider colorAlt divider />
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>I'm a final year student at RMIT University</SectionText>
+      <SectionText></SectionText>
+      <SectionText>
+        Hi, My name is Alfred Hutomo and I am a full stack developer. I love
+        programming and have been facinated in making things since I'm young,
+        Now I build websites and applications. Here's where my story begin...
+      </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

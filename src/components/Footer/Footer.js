@@ -1,9 +1,9 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiReact } from 'react-icons/di';
-import { IoLogoVercel } from 'react-icons/io5';
+import React from "react";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { DiReact } from "react-icons/di";
+import { IoLogoVercel } from "react-icons/io5";
 
-import { SocialIcons } from '../Header/HeaderStyles';
+import { SocialIcons } from "../Header/HeaderStyles";
 import {
   CompanyContainer,
   FooterWrapper,
@@ -14,7 +14,7 @@ import {
   Slogan,
   SocialContainer,
   SocialIconsContainer,
-} from './FooterStyles';
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
@@ -34,13 +34,13 @@ const Footer = () => {
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href='https://github.com'>
+          <SocialIcons href='https://www.github.com/AlfredHutomo'>
             <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://linkedin.com'>
+          <SocialIcons href='https://www.linkedin.com/in/alfred-hutomo'>
             <AiFillLinkedin size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://instagram.com'>
+          <SocialIcons href='https://www.instagram.com/alfredhutomo'>
             <AiFillInstagram size='3rem' />
           </SocialIcons>
         </SocialContainer>

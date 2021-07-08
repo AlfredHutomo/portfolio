@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import Link from "next/link";
+import React from "react";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { DiCssdeck } from "react-icons/di";
 
 import {
   Container,
@@ -11,7 +11,7 @@ import {
   Div3,
   NavLink,
   SocialIcons,
-} from './HeaderStyles';
+} from "./HeaderStyles";
 
 function Logo() {
   return (
@@ -38,10 +38,10 @@ const Header = () => (
       <Link href='/'>
         <a
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            color: 'white',
-            marginBottom: '20px',
+            display: "flex",
+            alignItems: "center",
+            color: "white",
+            marginBottom: "20px",
           }}
         >
           <Logo />
@@ -70,7 +70,7 @@ const Header = () => (
       <SocialIcons href='https://www.github.com/AlfredHutomo'>
         <AiFillGithub size='3rem' />
       </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/alfred-hutomo/'>
+      <SocialIcons href='https://www.linkedin.com/in/alfred-hutomo'>
         <AiFillLinkedin size='3rem' />
       </SocialIcons>
       <SocialIcons href='https://www.instagram.com/alfredhutomo/'>
