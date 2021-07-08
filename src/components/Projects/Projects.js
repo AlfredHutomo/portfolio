@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import {
   BlogCard,
@@ -25,34 +26,36 @@ const Projects = () => (
     <SectionDivider colorAlt divider />
     <SectionTitle main>Notable Projects</SectionTitle>
     <GridContainer>
-      {projects.map(
-        ({ id, image, title, description, tags, source, visit }) => (
-          <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title='true'>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
-            <UtilityList>
-              {visit.length > 0 && (
-                <ExternalLinks href={visit}>Visit</ExternalLinks>
-              )}
-              {source.length > 0 && (
-                <ExternalLinks href={source}>Code</ExternalLinks>
-              )}
-            </UtilityList>
-          </BlogCard>
-        )
-      )}
+      <Fade>
+        {projects.map(
+          ({ id, image, title, description, tags, source, visit }) => (
+            <BlogCard key={id}>
+              <Img src={image} />
+              <TitleContent>
+                <HeaderThree title='true'>{title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
+              <UtilityList>
+                {visit.length > 0 && (
+                  <ExternalLinks href={visit}>Visit</ExternalLinks>
+                )}
+                {source.length > 0 && (
+                  <ExternalLinks href={source}>Code</ExternalLinks>
+                )}
+              </UtilityList>
+            </BlogCard>
+          )
+        )}
+      </Fade>
     </GridContainer>
   </Section>
 );

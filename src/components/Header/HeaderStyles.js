@@ -34,9 +34,18 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 5;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+
+  li {
+    margin: auto 2rem auto;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+
+    li {
+      margin: auto 1rem auto;
+    }
   }
 `;
 export const Div3 = styled.div`
