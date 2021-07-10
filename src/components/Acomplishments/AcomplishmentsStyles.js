@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Boxes = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ export const Boxes = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     max-width: 500px;
     margin: 24px auto;
@@ -28,7 +28,7 @@ export const Box = styled.div`
   height: 144px;
   padding: 24px;
 
-  cursor: ${(props) => (props.onClick ? 'pointer' : 'auto')};
+  cursor: ${(props) => (props.onClick ? "pointer" : "auto")};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 210px;
